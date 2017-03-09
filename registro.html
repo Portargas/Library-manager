@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8"/>
+		<title>Login</title>
+		<meta charset="UTF-8">
+		<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1" />
+		<link rel="stylesheet" type="text/css" href="style.css"/>
+	</head>
+    <body>
+        <section id="contenedor">
+            <header>
+                <h3>Crear Cuenta</h3>
+            </header>
+            <section >
+                <form action="Registro.php" method="POST"> 
+                    <p>Socio</p> <input id="formulario" type="text" name="socio" value=""/>
+				<br/>
+                    <p>Contraseña</p> <input id="formulario" type="password" name="passRegistro" value=""/>
+				<br/>
+                    <p>Repita la Contraseña</p> <input id="formulario" type="password" name="passRegistro2" value=""/>
+				<br/>
+					<p>Nombre</p><input id="formulario" type="text" name="nombre" value=""/>
+				<br/>
+					<p>Telefono</p><input id="formulario" type="text" name="telefono" value=""/>
+				<br/>
+					<p>Direccion</p><input id="formulario" type="text" name="direccion" value=""/>
+
+				<input id="boton" type="submit" name="enviar" value="enviar"/>
+				<a href="login.php">¿Ya estas registrado?</a>
+				</form>
+            </section>
+        </section>
+    </body>
+</html>

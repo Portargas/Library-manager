@@ -1,0 +1,86 @@
+body{
+    margin: 0 auto;
+}
+
+header{
+    width: 50%;
+    
+    height: 120px;
+    margin-left: 25%;
+}
+header h1{
+    margin-left: 10%;
+}
+header span{
+    margin-left: 60%;
+}
+section{
+    width: 100%;
+    padding-bottom: 5%;
+    height: 1100px;
+    float: left;
+}
+
+section aside{
+    width: 100%;
+    
+    padding-bottom: 2%;
+}
+aside h2{
+    margin-left: 45%;
+}
+aside div{
+    margin-left: 25%;
+}
+
+section #centro{
+    width: 35%;
+    margin-left: 10%;
+    padding-bottom: 4%;
+}
+#centro h3{
+    margin-left: 40%;
+}
+
+#centro p{
+    margin-left: 10%;
+}
+
+#centro input{
+    margin-left: 25%;
+}
+
+section #prestamo{
+    width: 30%;
+    position: absolute;
+    margin-left: 50%;
+    margin-top: -40%;
+}
+section #devolucion{
+    width: 30%;
+    position: absolute;
+    margin-left: 50%;
+    margin-top: -20%;
+}
+section a{
+    margin-left: 20%;
+}
+
+section #salir{
+    margin-left:10%
+}
+
+section .editorial{
+    margin-left: 20%;
+    margin-bottom: 20px;
+}
+
+section .autor{
+    margin-left: 20%;
+    margin-bottom: 20px;
+}
+
+section .tema{
+    margin-left: 20%;
+    margin-bottom: 20px;
+}
