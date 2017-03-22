@@ -1,0 +1,44 @@
+body{
+    margin: 0 auto;
+	background-color: green;
+	
+}
+
+header{
+    width: 100%;
+	text-align: center;
+    background-color: white;
+    height: 120px;
+}
+
+
+section{
+    width: 100%;
+    padding-bottom: 5%;
+    height: auto;
+    float: left;
+}
+
+section aside{
+    width: 50%;
+    background-color: lightgrey;
+    padding-bottom: 2%;
+	margin-left: 20%;
+	
+}
+aside h2{
+    margin-left: 45%;
+}
+aside div{
+    margin-left: 25%;
+}
+
+section a{
+	margin-left: 60%;
+	color: white;
+}
+
+section #salirUsuario{
+	margin-left: 30%;
+	margin-top: 20px;
+}

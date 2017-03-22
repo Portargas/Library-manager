@@ -21,7 +21,7 @@ if(isset($_POST["enviar"])){
 	
 		
 		//Insertamos insertamos los valores en la tabla
-		$sqlSentencia = "   INSERT INTO prestamo (Fecha_prestamo ,IDUbicacion_actual, Prestamista, Libro) 
+		$sqlSentencia = "   INSERT INTO prestamo (Fecha_prestamo ,Ubicacion_actual, Prestamista, Libro) 
                             VALUES ('$fechaPrestamo', '$prestado', '$user', '$Libro')";
         
         $conn->exec($sqlSentencia);

@@ -9,15 +9,15 @@
 		<title>Inicio</title>
 		<meta charset="UTF-8">
 		<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1" />
-		<link rel="stylesheet" type="text/css" href="style.css"/>
+		<link rel="stylesheet" type="text/css" href="usuario.css"/>
 	</head>
     <body>
 		<header>
 			<h1> Biblioteca municipal</h1>
-			<span> <?php echo $_SESSION["usuario"]; ?></span>
+			<span> <?php echo $_SESSION["usuario"]; ?></span>	
 		</header>
-		<section>	
-			<article>
+		<section>
+			<aside>
 				<h2> Lista de libros</h2>
 				<br/>
 				
@@ -28,16 +28,16 @@
 					
 					<br/>
 					
-				<form action="lista.php" method="POST"> 	
+				<form action="buscar.php" method="POST"> 	
 					<p>Buscar Libro o Autor</p><input type="text" name="busqueda" value=""/>	
-
 					<input type="submit" name="buscar" value="Buscar"/>
 				</form>
 				</div>
-			</article>
+			</aside>
             <form action="salir.php" method="POST"> 	
-					<input type="submit" name="salir" value="Salir"/>
+					<input id="salirUsuario" type="submit" name="salirUsuario" value="Salir"/>
             </form>
+			<a href="nuevoTema.php"> Foro</a>
 		</section>
     </body>
 </html>

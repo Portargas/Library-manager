@@ -1,4 +1,4 @@
-<?php
+﻿<?php
 	session_start();
 ?>
 
@@ -31,6 +31,7 @@
 				<form action="buscar.php" method="POST"> 	
 					<p>Buscar Libro o Autor</p><input type="text" name="busqueda" value=""/>	
 					<input type="submit" name="buscar" value="Buscar"/>
+
                     <input type="submit" name="borrar" value="Borrar"/>
 				</form>
 				</div>
@@ -56,7 +57,7 @@
 					<br/>
 						<p>Titulo</p><input type="text" name="titulo" value=""/>
 					<br/>
-						<p>Estado</p><input type="text" name="ubicacion" value=""/>	
+						<p>Disponibilidad</p><input type="text" name="ubicacion" value=""/>	
 
 					<input type="submit" name="enviar" value="enviar" id="boton"/>
 				</form>
@@ -90,7 +91,7 @@
             </form>
             <a href="nuevoAutor.php"> Añadir Autor</a>
             <a href="nuevaEditorial.php">Añadir Editorial</a>
-            <a href="nuevoTema.php"> Añadir tema</a>
+            <a href="nuevoTema.php"> Foro</a>
 		</section>
     </body>
 </html>

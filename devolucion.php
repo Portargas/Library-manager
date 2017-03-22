@@ -1,4 +1,4 @@
-<?php
+﻿<?php
 
 $servername = "localhost";
 $username = "root";
@@ -22,7 +22,7 @@ if(isset($_POST["enviar"])){
 		
 		//Insertamos insertamos los valores en la tabla
         
-        $actualUbi = " update prestamo set IDUbicacion_actual= '$prestado', Fecha_devolucion ='$fechaPrestamo' where Libro = '$idLibro'";
+        $actualUbi = " update prestamo set Ubicacion_actual= '$prestado', Fecha_devolucion ='$fechaPrestamo' where Libro = '$idLibro'";
             
         $conn->exec($actualUbi);
         

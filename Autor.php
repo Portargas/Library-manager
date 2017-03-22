@@ -9,30 +9,27 @@ if(isset($_POST["enviar"])){
 		
 	try {			
 		//guardamos los campos de usuario y contraseña
-		$editorial=$_POST["nombre"];
-		$direc=$_POST["direccion"];
-        $idEdi = $_POST["idEditorial"];
-		$tlf = $_POST["telefono"];
+		$autor=$_POST["nombre"];
+		$fechaNac=$_POST["fecha"];
+        $idAutor = $_POST["idAutor"];
 		
 		
 		$conn = new PDO("mysql:host=$servername;dbname=$myDB", $username, $password);
 		$conn->setAttribute(PDO::ATTR_ERRMODE, PDO::ERRMODE_EXCEPTION);
 	
 		//Insertamos directamente una fila en la BD
-		$sqlSentencia = "   INSERT INTO editorial (IDEditorial, Direccion, Nombre, Telefono) 
-                            VALUES ('$idEdi','$direc','$editorial','$tlf')";
+		$sqlSentencia = "   INSERT INTO autor (IDAutor, Fecha_nacimiento, Nombre) 
+                            VALUES ('$idAutor','$fechaNac','$autor')";
 							
 		$conn->exec($sqlSentencia);
-		echo "editorial agregado correctamente </br>";
+		echo "Autor agregado correctamente </br>";
       
 		$conn = null;
 	}
 
 	catch(PDOException $e) {						
 		echo "Error: " . $e->getMessage();
-	}
-    
-
+	}			
 }
 ?>
-<a href="nuevaEditorial.php">volver</a>
+        <a href="nuevoAutor.php">volver</a>

@@ -1,4 +1,4 @@
-<?php
+﻿<?php
 	session_start();
 ?>
 
@@ -30,7 +30,7 @@
 			</article>
 			
 			<article class="tema">
-				<h2>Lista de autores</h2>
+				<h2>Temas a tratar</h2>
 			
 				<?php 
 					include("mostrarTemas.php");
@@ -38,11 +38,14 @@
 				
 				
 			</article>
+            <?php
+			if($_SESSION["usuario"] == "Admin"){
+				echo '<a href="inicio.php">volver</a>';
+			}else{
+				echo '<a href="usuarios.php">volver</a>';
+			}
             
-        <form action="salir.php" method="POST"> 	
-            <input class="tema" type="submit" name="volver" value="Volver"/>
-        </form>
-			
+			?>
 		</section>
     </body>
 </html>

@@ -5,6 +5,8 @@ $username = "root";
 $password = "";
 $myDB ="biblioteca";
 
+session_start();
+
 if(isset($_POST["buscar"])){
 		
 		try{
@@ -44,13 +46,16 @@ if(isset($_POST["buscar"])){
 			echo "Error: " . $e->getMessage();
 		}
 	}
+	
+	if($_SESSION["usuario"] == "Admin"){
+		echo '<a href="inicio.php"><input type="button" value="volver"/></a>';
+	}else{
+		echo '<a href="usuarios.php"><input type="button" value="volver"/></a>';
+	}
+	
 
-    ?>
-        <form action="salir.php" method="POST"> 	
-            <input type="submit" name="volver" value="Volver"/>
-        </form>
-    <?php
-if($_SESSION["usuario"] == "Admin"){
+
+if($_SESSION["usuario"]=="Admin"){
 
     if(isset($_POST["borrar"])){
 		

@@ -1,4 +1,4 @@
-<?php
+﻿<?php
 	session_start();
 ?>
 <!DOCTYPE html>
@@ -45,9 +45,7 @@
 				
 			</article>
         
-            <form action="salir.php" method="POST"> 	
-                <input class="editorial" type="submit" name="volver" value="Volver"/>
-            </form>
+            <a href="inicio.php">volver</a>
 		</section>
     </body>
 </html>

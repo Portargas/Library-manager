@@ -1,4 +1,4 @@
-<?php
+﻿<?php
 include("login.html");
 
 $servername="localhost";

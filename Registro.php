@@ -13,7 +13,8 @@ include("registro.html");
 if(isset($_POST["enviar"])){
 	if($_POST["passRegistro"]==$_POST["passRegistro2"]){
 		
-	try {			
+	try {
+			
 		//guardamos los campos de usuario y contraseña
 		$socio=$_POST["socio"];
 		$pass=$_POST["passRegistro"];
@@ -27,9 +28,10 @@ if(isset($_POST["enviar"])){
 	
 		//Insertamos directamente una fila en la BD
 		$sqlSentencia = "   INSERT INTO socio (Password, IDSocio, Nombre,Telefono, Direccion) 
-                            VALUES ('$pass', '$socio', '$nombre','tlf','direc')";
+                            VALUES ('$pass', '$socio', '$nombre','$tlf','$direc')";
 							
 		$conn->exec($sqlSentencia);
+
 		header("Location: Login.php");
         
 	}

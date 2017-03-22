@@ -23,7 +23,7 @@
 		if(isset($resultado)){
 			foreach($resultado as $row){
 					
-				echo $row["Nombre"]."<br/>";
+				echo "Nombre: ".$row["Nombre"]." Direccion: ".$row["Direccion"]." Telefono ".$row["Telefono"]." IDEditorial ".$row["IDEditorial"]."<br/>";
 			}	
 		}else{
 			echo "Error no existe ese autor en nuestra base de datos";

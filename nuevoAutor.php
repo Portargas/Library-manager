@@ -1,4 +1,4 @@
-<?php
+﻿<?php
 	session_start();
 ?>
 
@@ -26,7 +26,7 @@
 					<br/>
 						<p>IDAutor</p> <input  type="text" name="idAutor" value=""/>
 					<br/>
-
+							
 						<input type="submit" name="enviar" value="enviar"/>
 					</form>
 			</article>
@@ -41,9 +41,7 @@
 				
 			</article>
             
-        <form action="salir.php" method="POST"> 	
-            <input class="autor" type="submit" name="volver" value="Volver"/>
-        </form>
+        <a href="inicio.php">volver</a>
 			
 		</section>
     </body>

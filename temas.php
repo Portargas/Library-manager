@@ -31,9 +31,5 @@ if(isset($_POST["enviar"])){
 	}			
 }
 ?>
-        <form action="salir.php" method="POST"> 	
-            <input type="submit" name="volver" value="Volver"/>
-        </form>
-    <?php
 
-?>
+<a href="nuevoTema.php">volver</a>  
